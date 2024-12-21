@@ -1,0 +1,408 @@
+ :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+ a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #dedfe4;
+}
+
+body {
+  overflow: hidden; 
+  height: 100vh; 
+  margin: 0; 
+}
+
+ h1 {
+  font-size: 3em;   
+} 
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+ul {
+  list-style-type: none;
+          
+}
+
+li {
+  margin: 10px 0;  
+  position: relative; 
+  background-color: #ffffff;
+  border: 2px solid rgb(153, 151, 151); 
+  border-radius: 4px; 
+  padding: 10px; 
+  min-height: 60px; 
+  width: 700px; 
+  box-sizing: border-box;
+  word-wrap: break-word; 
+}
+
+span {
+  font-size: 20px; 
+}
+
+no-notes
+
+.todo-time {
+  font-size: 10px;
+  color: gray;     
+}
+
+.delete-button {
+  position: absolute; 
+  right: 0;          
+  margin-right: 10px; 
+  display: inline;  
+  margin-top: 5px;
+}
+
+.description {
+  font-size: 14px; 
+  color: darkgray; 
+  margin-top: 5px; 
+}
+
+input[type="text"],
+textarea {
+  width: 100%; 
+  max-width: 92%;   
+  margin-bottom: 10px; 
+  padding: 10px;    
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  resize: none;
+}
+
+.textarea-content {
+  width: 50%;         
+  margin: auto;  
+}     
+
+.toggle-button {
+  width: 280px; 
+  padding: 10px; 
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+.todo-item {
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
+  width: 100%; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+}
+
+.todo-time {
+  position: absolute; 
+  bottom: 0px; 
+  right: 10px; 
+  font-size: 0.7em; 
+  color: darkgray; 
+}
+
+.note {
+  display: inline-block; 
+  width: 73%; 
+  overflow-wrap: break-word; 
+}
+
+.description {
+  width: 80%; 
+  overflow-wrap: break-word; 
+  color: rgb(117, 117, 117); 
+  margin-top: 5px; 
+}
+
+.todo-label {
+  display: flex; 
+  align-items: center; 
+}
+
+.todo-checkbox {
+  margin-right: 10px; 
+  align-self: flex-start; 
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; 
+  align-items: center; 
+}
+
+.edit-button, .delete-button {
+  cursor: pointer; 
+}
+
+.edit-button{
+  width: 25px;
+  display: flex;          
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.edit-button img {
+  width: 14px; 
+  height: 14px; 
+}
+
+.fixed-button{
+  margin-bottom: 28px;
+  margin-left: 20px;
+  width: 300px;
+}
+
+.todo-text, 
+.todo-description {
+  display: inline-block; 
+  width: 80%; 
+  overflow: hidden; 
+}
+
+.todo-item {
+  display: flex;
+  align-items: flex-start; 
+}
+
+.priority-buttons {
+  margin: 10px 0;
+}
+
+.priority-buttons button {
+  margin-right: 20px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.button-add{
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.no-notes {
+  width: 250px;
+  color: #000000; 
+  font-size: 1.6em ;
+  text-align: center;
+  margin:0px 300px;
+  background-color: #dedfe4;
+  border: #dedfe4; 
+}
+
+input[type="text"],
+textarea {
+  width: 170%; 
+  max-width: 900px;
+  padding: 10px; 
+  margin-bottom: 10px; 
+  box-sizing: border-box; 
+}
+
+.add{
+  display: flex;
+}
+
+.controls {
+  position: sticky; 
+  top: 0; 
+
+}
+
+ul {
+  max-height: 350px; 
+  overflow-y: auto; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.filter-checkboxes {
+  display: flex; 
+  align-items: center; 
+}
+
+.filter-checkboxes label {
+  margin-right: 20px; 
+  display: flex; 
+  align-items: center; 
+}
+
+input[type="checkbox"] {
+  margin-right: 5px; 
+}
+
+.filter-checkboxes{
+  margin: 15px 0px;
+}
+
+textarea {
+  height: 70px; 
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px; 
+}
+
+@media (max-width: 1450px){
+
+  input[type="text"],
+  textarea {
+    width: 100%; 
+    max-width: 90%; 
+  }
+}
+
+@media (max-width: 900px){
+  input[type="text"],
+  textarea {
+    width: 100%; 
+    max-width: 60%; 
+  }
+
+  .no-notes {
+    width: 250px;
+    color: #000000; 
+    font-size: 1.6em ;
+    text-align: center;
+    margin:0px 0px;
+    background-color: #dedfe4;
+    border: #dedfe4; 
+  }
+
+  textarea {
+    max-width: 60%;
+  }
+
+  li {
+    margin: 10px 0;  
+    position: relative; 
+    background-color: #ffffff;
+    border: 2px solid rgb(153, 151, 151); 
+    border-radius: 4px; 
+    padding: 10px; 
+    min-height: 60px; 
+    width: 73%; 
+    box-sizing: border-box;
+    word-wrap: break-word; 
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  
+  .button-add {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    
+  }
+ 
+  .fixed-button{
+    width: 200px;
+  }
+ 
+}
+
+@media (max-width: 450px){
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 6px;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+
+  .no-notes {
+    width: 250px;
+    color: #000000; 
+    font-size: 0.9em ;
+    text-align: center;
+    margin:0px 0px;
+    background-color: #dedfe4;
+    border: #dedfe4; 
+  }
+
+  .button-add {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    font-size: 10px;  
+  }
+
+  .fixed-button{
+    margin-left: 0;
+  }
+
+}
+
+
+
+
