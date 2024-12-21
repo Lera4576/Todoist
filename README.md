@@ -11,6 +11,8 @@ The Todoist application allows users to create, edit, delete, and manage tasks e
 - **Filter by Urgency**: Show tasks based on their urgency level (Urgent, Medium, Not Urgent).
 - **Filter by Completion Status**: Display only completed or incomplete tasks.
 
+- ![Alt text](https://github.com/Lera4576/Todoist/blob/main/todoist.gif?raw=true)
+
 ## Technologies Used
 - **React**: For building the user interface.
 - **Chance.js**: For generating random task data.
